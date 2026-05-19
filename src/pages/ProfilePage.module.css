@@ -1,0 +1,246 @@
+/* ==========================================================================
+   1. CONTAINER GERAL & PERFIL
+   ========================================================================== */
+.container {
+  padding: 30px;
+  max-width: 900px;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+/* Versão Card clássica */
+.profileCard {
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  border: 1px solid #dee2e6;
+  margin-bottom: 30px;
+}
+
+.profileCard h2 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 2px solid #dee2e6;
+  padding-bottom: 10px;
+}
+
+.profileCard p {
+  font-size: 16px;
+  color: #495057;
+  margin: 10px 0;
+}
+
+/* Versão Box Minimalista (Estilo Segoe UI) */
+.profile {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-top: 5px solid #3498db;
+}
+
+.profile h2 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  text-align: center;
+  font-size: 1.8rem;
+  border-bottom: 2px solid #f1f1f1;
+  padding-bottom: 15px;
+}
+
+.profile p {
+  margin: 15px 0;
+  font-size: 1.1rem;
+  color: #555;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.profile p:hover {
+  background-color: #f8f9fa;
+}
+
+.profile strong {
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+
+.profile p:last-child {
+  margin-top: 20px;
+}
+
+.profile p:last-child::after {
+  content: '';
+}
+
+.profile p span {
+  color: #2c3e50;
+}
+
+
+/* ==========================================================================
+   2. SEÇÃO DE HISTÓRICO & TABELA DE EMPRÉSTIMOS
+   ========================================================================== */
+.loansSection h3 {
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.loading, 
+.emptyText {
+  color: #6c757d;
+  font-style: italic;
+}
+
+.loansTable {
+  width: 100%;
+  background-color: white;
+  border-collapse: collapse;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.loansTable th, 
+.loansTable td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.loansTable th {
+  background-color: #212529;
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.loansTable tbody tr {
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.2s;
+}
+
+.loansTable tbody tr:hover {
+  background-color: #f1f3f5;
+}
+
+.bookTitle {
+  font-weight: bold;
+  color: #1a1a1a;
+}
+
+/* Linhas com devolução em atraso */
+.overdueRow {
+  background-color: #fff5f5 !important;
+}
+
+.overdueRow:hover {
+  background-color: #fee2e2 !important;
+}
+
+/* Botão de Devolução */
+.returnBtn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.returnBtn:hover {
+  background-color: #0056b3;
+}
+
+.disabledText {
+  color: #6c757d;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+
+/* ==========================================================================
+   3. BADGES DE STATUS
+   ========================================================================== */
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.pending {
+  background-color: #fff3cd;
+  color: #856404;
+  border: 1px solid #ffeeba;
+}
+
+.active {
+  background-color: #cce5ff;
+  color: #004085;
+  border: 1px solid #b8daff;
+}
+
+.returned {
+  background-color: #d4edda;
+  color: #155724;
+  border: 1px solid #c3e6cb;
+}
+
+.overdue {
+  background-color: #f8d7da;
+  color: #721c24;
+  border: 1px solid #f5c6cb;
+}
+
+
+/* ==========================================================================
+   4. CONTROLES DE PAGINAÇÃO
+   ========================================================================== */
+.paginationContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pageBtn {
+  padding: 6px 12px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #2d3748;
+  border: 1px solid #cbd5e0;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background-color: #f7fafc;
+  border-color: #a0aec0;
+}
+
+.pageBtn:disabled {
+  background-color: #edf2f7;
+  color: #a0aec0;
+  cursor: not-allowed;
+  border-color: #cbd5e0;
+}
+
+.pageText {
+  color: #4a5568;
+}

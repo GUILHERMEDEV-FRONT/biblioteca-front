@@ -1,0 +1,53 @@
+.container {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.form { display: flex; flex-direction: column; gap: 15px; }
+
+.inputGroup { display: flex; flex-direction: column; gap: 5px; }
+
+.inputGroup label { font-weight: bold; color: #333; }
+
+.inputGroup input, .inputGroup textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+
+.inputRow {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.btnSave {
+    background: #3498db;
+    color: white;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.btnCancel {
+    background: #e0e0e0;
+    color: #333;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.loading { text-align: center; margin-top: 50px; font-size: 1.2rem; }

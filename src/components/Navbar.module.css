@@ -1,0 +1,34 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1rem;
+  background: #1E3A5F;
+  color: white;
+  gap: 10em;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  text-decoration: none;
+}
+.links a {
+  padding: 0.5em;
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+
+}
+.btnLogout {
+  background: #e74c3c;
+  border: none;
+  margin-left: 10px;
+  margin-left: px;
+  padding: 200px;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}

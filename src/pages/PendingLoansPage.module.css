@@ -1,0 +1,96 @@
+.container {
+  padding: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: #333;
+  font-family: sans-serif;
+}
+
+.emptyState {
+  padding: 20px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.emptyText {
+  margin: 0;
+  color: #6c757d;
+  font-size: 14px;
+}
+
+.tableContainer {
+  width: 100%;
+  background-color: wheat;
+  border-collapse: collapse;
+  margin-top: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: sans-serif;
+}
+
+.tableHeader {
+  background-color: #f1f3f5;
+  border-bottom: 2px solid #dee2e6;
+  text-align: left;
+}
+
+.tableHeader th {
+  padding: 12px;
+  color: #495057;
+}
+
+.tableRow {
+  border-bottom: 1px solid #dee2e6;
+  transition: background-color 0.2s;
+}
+
+.tableRow:hover {
+  background-color: #f8f9fa;
+}
+
+.tableCell {
+  padding: 12px;
+  color: #212529;
+}
+
+.bookTitle {
+  font-weight: bold;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.approveButton {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.2s;
+}
+
+.approveButton:hover {
+  background-color: #218838;
+}
+
+.rejectButton {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.rejectButton:hover {
+    background-color: #c0392b;
+}

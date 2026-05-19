@@ -1,0 +1,154 @@
+.container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.loading {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.table {
+    width: 100%;
+    background-color: whitesmoke;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.table th, .table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+.badgeMember {
+    background-color: #e2e3e5;
+    color: #383d41;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+}
+
+.badgeStaff {
+    background-color: #cce5ff;
+    color: #004085;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.btnInfo {
+    background-color: #17a2b8;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    margin-right: 8px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnDelete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnInfo:hover { background-color: #138496; }
+.btnDelete:hover { background-color: #c82333; }
+
+/* MODAL STYLES */
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 600px;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+.btnCloseModal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.noLoans {
+    margin-top: 20px;
+    color: #666;
+    font-style: italic;
+}
+
+.modalTableContainer {
+    margin-top: 20px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+.modalTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.modalTable th, .modalTable td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.statusActive {
+    color: #d39e00;
+    font-weight: bold;
+}
+
+.statusReturned {
+    color: #28a745;
+}
+
+.actionGroup {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.btnEdit {
+    background-color: #f0ad4e; /* Laranja/Amarelo corporativo */
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btnEdit:hover {
+    background-color: #ec971f;
+}
